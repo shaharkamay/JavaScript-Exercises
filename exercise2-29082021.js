@@ -1,4 +1,7 @@
 const num = -8
 let absolute;
-// your code goes here
+absolute = num;
+if (num < 0) {
+    absolute = num * -1;
+}
 console.log(absolute)
