@@ -26,7 +26,9 @@ const formula1Champions = [
 let winners = {}
 
 function countWin(driver) {
-    // your code goes here
+    if(winners.hasOwnProperty(driver)) winners[driver]++;
+    else winners[driver] = 1;
 }
 
 formula1Champions.forEach(countWin)
+console.log(winners);
